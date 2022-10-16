@@ -39,3 +39,4 @@ COPY metadata.json .
 COPY docker.svg .
 COPY --from=client-builder /ui/build ui
 CMD /service -socket /run/guest-services/extension-Kubescape.sock
+CMD ["echo", "Task has been completed- Image created Successfully"]
